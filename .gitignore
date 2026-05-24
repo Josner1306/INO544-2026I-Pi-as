@@ -1,0 +1,50 @@
+# Python y cache
+__pycache__/
+*.py[cod]
+*.pyc
+*.so
+.Python
+
+# Entorno virtual (obligatorio ignorar)
+venv/
+ENV/
+env/
+
+# Datasets e imágenes (no subir las 400 fotos)
+data/
+dataset/
+*.zip
+*.tar.gz
+
+# Modelos intermedios pesados (Keras, PyTorch, etc.)
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+model/*.h5        # excepto el ONNX que sí subiremos
+
+# Archivos temporales de entrenamiento
+logs/
+checkpoints/
+*.log
+
+# IDE y sistema
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook (si usas)
+.ipynb_checkpoints/
+*.ipynb
+
+# Archivos de pruebas locales
+test_*.py
+temp_*
+
+model/*.h5
+model/*.pb
+model/assets/
+model/saved_model/
